@@ -2,27 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "";
-  font-style:"normal";
-  font-weight: 400;
-  font-display: swap;
-  src: url("") format("");
-}
+@layer base {
+  @font-face {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/BarlowCondensed-Medium.woff2") format("woff2");
+  }
 
-@layer base = {
+  @font-face {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/fonts/BarlowCondensed-SemiBold.woff2") format("woff2");
+  }
+
   :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    --clr-primary-violet: hsl(263, 55%, 52%);
+    --clr-primary-grayblue: hsl(217, 19%, 35%);
+    --clr-primary-blackblue: hsl(219, 29%, 14%);
+    --clr-primary-white: hsl(0, 0%, 100%);
+
+    --clr-neutral-gray: hsl(0, 0%, 81%);
+    --clr-neutral-grayblue: hsl(210, 46%, 95%);
+
+    --fs-base: .8125rem;
+    --fw-500: 500;
+    --fw-600: 600;
+  }
+
+  .wrapper {
+    margin-line: auto;
+    padding-inline: 1rem;
+    max-width: 60rem;
+  }
+
+  .flow > * + * {
+    margin-top: var(--flow-space, 1em);
   }
 } 
