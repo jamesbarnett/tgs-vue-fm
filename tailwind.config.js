@@ -14,8 +14,10 @@ export default {
           violet: "var(--clr-primary-violet)",
           grayblue: "var(--clr-primary-grayblue)",
           blackblue: "var(--clr-primary-blackblue)",
+          heliotrope: "var(--clr-primary-heliotrope)",
         },
         neutral: {
+          lightgray: "var(--clr-neutral-lightgray)",
           gray: "var(--clr-neutral-gray)",
           grayblue: "var(--clr-neutral-grayblue)",
         },
