@@ -78,4 +78,7 @@ import Card from './components/Card.vue'
   </div>
 </template>
 <style scoped>
+  .card-container {
+    max-width: 1110px;
+  }
 </style>
