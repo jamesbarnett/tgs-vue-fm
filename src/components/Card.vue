@@ -58,7 +58,7 @@
       grid-area: e;
     }
     .card[data-accent="violet"]::before {
-      background-image: url("./images/bg-pattern-quotation.svg");
+      background-image: url("/images/bg-pattern-quotation.svg");
       content: "";
       position: absolute;
       top: 0;
