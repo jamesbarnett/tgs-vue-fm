@@ -12,7 +12,7 @@
 <template>
   <article class="card flow rounded-xl p-8 mx-auto w-full mb-6 md:mb-0">
     <div class="flex gap-8">
-      <img :src=props.image class="inline rounded-full w-[28px] h-[28px]" alt="" />
+      <img :src=props.image class="inline rounded-full w-[28px] h-[28px]" :alt=props.student />
       <div class="flex flex-1 flex-col">
         <h1 class="inline text-[0.8125rem] font-medium">{{props.student}}</h1>
         <h2 class="inline text-[0.6875rem]">{{props.status}}</h2>
