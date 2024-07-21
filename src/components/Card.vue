@@ -99,7 +99,7 @@
       color: var(--clr-neutral-gray);
     }
     .testimonial {
-      color: var(--clr-neutral-gray);
+      color: var(--clr-primary-grayblue);
     }
   }
 
