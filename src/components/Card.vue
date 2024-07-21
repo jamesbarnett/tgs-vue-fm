@@ -18,14 +18,27 @@
         <h2 class="inline text-[0.6875rem]">{{props.status}}</h2>
       </div>
     </div>
-    <p class="font-semibold text-[1.25rem] leading-tight pb-8 md:pb-0">{{props.summary}}</p>
-    <p class="testimonial text-[0.8125rem] font-medium">{{props.testimonial}}</p>
+    <p class="quote relative z-[2] font-semibold text-[1.25rem] leading-tight pb-8 md:pb-0">{{props.summary}}</p>
+    <p class="testimonial relative z-[2] text-[0.8125rem] font-medium">{{props.testimonial}}</p>
   </article>
 </template>
 <style scoped>
-  article {
+  .card {
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: -1;
+  }
+
+  .card[data-accent="violet"]::before {
+    background-image: url("./images/bg-pattern-quotation.svg");
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 7%;
+    width: 102px;
+    height: 104px;
+    z-index: -1;
   }
 
   @media (min-width: 768px) {
@@ -43,6 +56,16 @@
     }
     .card[data-gridarea="e"] {
       grid-area: e;
+    }
+    .card[data-accent="violet"]::before {
+      background-image: url("./images/bg-pattern-quotation.svg");
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 15%;
+      width: 102px;
+      height: 104px;
+      z-index: -1;
     }
   }
 
